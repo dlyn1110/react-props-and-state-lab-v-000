@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 class Filters extends React.Component {
+
+  handleFilterTypeChange = event => this.props.onChangeType(event.target.value);
+
   render() {
     return (
       <div className="ui form">
@@ -11,8 +14,7 @@ class Filters extends React.Component {
             id="type"
             value={this.props.filters.type}
             onChange={this.handleFilterTypeChange}
-           >
-
+          >
             <option value="all">All</option>
             <option value="cat">Cats</option>
             <option value="dog">Dogs</option>
@@ -22,9 +24,9 @@ class Filters extends React.Component {
 
         <div className="field">
           <button
-          className="ui secondary button"
-          onClick={this.props.onFindPetsClick}
-          >Find pets</button>
+            className="ui secondary button"
+            onClick={this.props.onFindPetsClick}
+            >Find pets</button>
         </div>
       </div>
     );
