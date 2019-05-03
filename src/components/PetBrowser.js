@@ -8,4 +8,5 @@ const PetBrowser = ({ pets, onAdoptPet }) => {
 
   return <div className="ui cards">{petCards}</div>;
 };
+
 export default PetBrowser
