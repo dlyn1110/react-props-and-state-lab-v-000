@@ -31,4 +31,4 @@ class Filters extends React.Component {
   }
 }
 
-export default Filters
+export default Filters;
