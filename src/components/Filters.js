@@ -27,7 +27,7 @@ class Filters extends React.Component {
           >Find pets</button>
         </div>
       </div>
-    )
+    );
   }
 }
 
